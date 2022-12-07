@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Craig Edwards</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="../CSS/main.css">
     <style>
         body, html {
     height: 100%;
@@ -69,7 +69,7 @@ nav a:hover{
 for different background colors; gradient controlled by opacity with first set of rbga numbers starting at top of image,
 second for bottom*/
 .hero-image{
-    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../images/yosemite-pano-1-best-for-emails.jpg");
+    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../../static/images/yosemite-pano-1-best-for-emails.jpg");
     background-repeat: repeat;
     width: cover;
    
@@ -78,7 +78,7 @@ second for bottom*/
 }
 
 .fame-image{
-    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("images/Edwards_AFB_2020_Cover.jpg");
+    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../static/images/Edwards_AFB_2020_Cover.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
@@ -277,7 +277,7 @@ width:300px
 }
 
 .wife-banner{
-    background-image: url("images/flower-banner-purple-1600x1200.jpg");
+    background-image: url("../static/images/flower-banner-purple-1600x1200.jpg");
    /* background-repeat: repeat;
     width: cover;
     height: 50px;
@@ -368,12 +368,12 @@ p {
 <body>
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
             <li><a href="https://bird-on-the-brain-flask.herokuapp.com/">Flask App</a></li>
             <li><a href="https://jacedwards.github.io/Bird-Brain-Philanthropy/#/">React App</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-            <li><a href="images/Resume.pdf">Resum&eacute;</a></li>
-            <li><a href="images/Cover_letter.pdf">Cover Letter</a></li>
+            <li><a href="{{ url_for('recs') }}">Recommendations</a></li>
+            <li><a href="../static/images/Resume.pdf">Resum&eacute;</a></li>
+            <li><a href="../static/images/Cover_letter.pdf">Cover Letter</a></li>
 
         </ul>        
     </nav>
@@ -381,11 +381,11 @@ p {
     <!-- <div class="flex-container-1" style="padding-top: 20px; margin-bottom: -35px">
         
             
-        <div class="items-1"><img src="images/yosemite-pano-1-best-for-emails.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/blue_2_cloud.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/yosemite-2-emails.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/blue_3_brush2.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/sequoia-pano-1-email.jpg" height="75" object-position="scale-down"></div>                                            
+        <div class="items-1"><img src="../static/images/yosemite-pano-1-best-for-emails.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/blue_2_cloud.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/yosemite-2-emails.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/blue_3_brush2.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/sequoia-pano-1-email.jpg" height="75" object-position="scale-down"></div>                                            
     </div> -->
 
 <div>
@@ -401,7 +401,7 @@ p {
 
 
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
-            <a style="text-decoration: none" href="images/Rec_Scranton.pdf">
+            <a style="text-decoration: none" href="../static/images/Rec_Scranton.pdf">
             <table>
                 <tr >
                     <p style="text-align:center">GE & Delta Software Manager</p>
@@ -410,8 +410,8 @@ p {
                 </tr>
                 <tr >
                     <p>
-                        <a href="images/Rec_Scranton.pdf">
-                        <img src="images/Scranton-pic-cropped.jpg" alt="Dr. Bruce Scranton" width="248" height="220"  class="center">
+                        <a href="../static/images/Rec_Scranton.pdf">
+                        <img src="../static/images/Scranton-pic-cropped.jpg" alt="Dr. Bruce Scranton" width="248" height="220"  class="center">
                     </a>
                     </p>
                 </tr>
@@ -422,7 +422,7 @@ p {
 
 
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
-            <a style="text-decoration: none" href="images/Rec_Greeley.pdf">
+            <a style="text-decoration: none" href="../static/images/Rec_Greeley.pdf">
             <table>
                 <tr >
                     <p style="text-align:center">Chair of Art & Design</p>
@@ -431,8 +431,8 @@ p {
                 </tr>
                 <tr >
                     <p>
-                        <a href="images/Rec_Greeley.pdf">
-                        <img src="images/Greeley-pic-cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
+                        <a href="../static/images/Rec_Greeley.pdf">
+                        <img src="../static/images/Greeley-pic-cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
                     </a>
                     </p>
                 </tr>
@@ -454,7 +454,7 @@ p {
                 <tr >
                     <p>
                         <a href="https://www.linkedin.com/in/craig-edwards-fs-phd/details/recommendations/?detailScreenTabIndex=0">
-                        <img src="images/linkedin_logo_cropped.jpg" alt="LinkedIn Recommendations" width="250" height="220"  class="center">
+                        <img src="../static/images/linkedin_logo_cropped.jpg" alt="LinkedIn Recommendations" width="250" height="220"  class="center">
                     </a>
                     </p>
                 </tr>
@@ -464,7 +464,7 @@ p {
         </div>
 
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
-            <a style="text-decoration: none" href="images/Recommendations_Clients-n_Employees.pdf">
+            <a style="text-decoration: none" href="../static/images/Recommendations_Clients-n_Employees.pdf">
 
                 <div>
 
@@ -476,8 +476,8 @@ p {
                     </tr>
                     <tr >
                         <p>
-                            <a href="images/Recommendations_Clients-n_Employees.pdf">
-                                <img src="images/IWU.png" alt="Client and Employee Recommendations" width="225" height="220"  class="center">
+                            <a href="../static/images/Recommendations_Clients-n_Employees.pdf">
+                                <img src="../static/images/IWU.png" alt="Client and Employee Recommendations" width="225" height="220"  class="center">
                             </a>
                         </p>
                     </tr>

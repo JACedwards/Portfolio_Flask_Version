@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Craig Edwards</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="../static/CSS/main.css">
     <style>
         body, html {
     height: 100%;
@@ -69,7 +69,7 @@ nav a:hover{
 for different background colors; gradient controlled by opacity with first set of rbga numbers starting at top of image,
 second for bottom*/
 .hero-image{
-    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../images/yosemite-pano-1-best-for-emails.jpg");
+    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../../static/images/yosemite-pano-1-best-for-emails.jpg");
     background-repeat: repeat;
     width: cover;
    
@@ -78,7 +78,7 @@ second for bottom*/
 }
 
 .fame-image{
-    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("images/Edwards_AFB_2020_Cover.jpg");
+    background-image: linear-gradient(rgba(112, 106, 237, 0.35), rgba(112, 106, 237, 0.35)), url("../static/images/Edwards_AFB_2020_Cover.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
@@ -277,7 +277,7 @@ width:300px
 }
 
 .wife-banner{
-    background-image: url("images/flower-banner-purple-1600x1200.jpg");
+    background-image: url("../static/images/flower-banner-purple-1600x1200.jpg");
    /* background-repeat: repeat;
     width: cover;
     height: 50px;
@@ -385,9 +385,10 @@ a:active {
             <li><a href="index.html">Home</a></li>
             <li><a href="https://bird-on-the-brain-flask.herokuapp.com/">Flask App</a></li>
             <li><a href="https://jacedwards.github.io/Bird-Brain-Philanthropy/#/">React App</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-            <li><a href="images/Resume.pdf">Resum&eacute;</a></li>
-            <li><a href="images/Cover_letter.pdf">Cover Letter</a></li>
+
+            <li><a href="{{ url_for('recs') }}">Recommendations</a></li>
+            <li><a href="../static/images/Resume.pdf">Resum&eacute;</a></li>
+            <li><a href="../static/images/Cover_letter.pdf">Cover Letter</a></li>
 
         </ul>        
     </nav>
@@ -395,73 +396,73 @@ a:active {
     <table style="margin-left: auto; margin-right: auto;margin-top: 20px">
         <tr>
             <td>
-                <img src="images/jinja-logo.png" height="90px">
+                <img src="../static/images/jinja-logo.png" height="90px">
             </td>
             <td>
-                <img src="images/react-logo.png" height="90px">
+                <img src="../static/images/react-logo.png" height="90px">
             </td>
             <td>
-                <img src="images/graphql-logo.png" height="95px">
+                <img src="../static/images/graphql-logo.png" height="95px">
             </td>
             <td>
-                <img src="images/nodejs-shield.png" height="100px">
+                <img src="../static/images/nodejs-shield.png" height="100px">
             </td>
             <td>
-                <img src="images/sql-logo.png" height="100px">
-            </td>
-
-
-
-            <td>
-                <img src="images/PostgreSQL.png" height="92px">
-            </td>
-
-            <td>
-                <img src="images/flask-logo-round.png" height="100px">
-            </td>
-            <td>
-                <img src="images/python-logo.png" height="100px">
-            </td>
-
-            <td>
-                <img src="images/AWS_cert_logo.jpg" height="90px">
-            </td>
-
-            <td>
-                <img src="images/CSS3-logo.png" height="90px">
-            </td>
-            <td>
-                <img src="images/HTML-logo.png" height="90px">
-            </td>
-            <td>
-                <img src="images/JavaScript-logo.svg" height="90px">
-            </td>
-            <td>
-                <img src="images/vue-logo.png" height="90px">
-            </td>
-            <td>
-                <img src="images/bootstrap-logo.png" height="95px">
+                <img src="../static/images/sql-logo.png" height="100px">
             </td>
 
 
+
             <td>
-                <img src="images/mongodb-logo.jpg" height="95px">
-            </td>
-            <td>
-                <img src="images/firebase-logo.png" height="95px">
-            </td>
-            <td>
-                <img src="images/jsx-logo.png" height="89px">
-            </td>
-            <td>
-                <img src="images/RESTful-logo.png" height="95px">
+                <img src="../static/images/PostgreSQL.png" height="92px">
             </td>
 
             <td>
-                <img src="images/github-logo.png" height="95px">
+                <img src="../static/images/flask-logo-round.png" height="100px">
             </td>
             <td>
-                <img src="images/sqlalchemy-logo.png" height="95px">
+                <img src="../static/images/python-logo.png" height="100px">
+            </td>
+
+            <td>
+                <img src="../static/images/AWS_cert_logo.jpg" height="90px">
+            </td>
+
+            <td>
+                <img src="../static/images/CSS3-logo.png" height="90px">
+            </td>
+            <td>
+                <img src="../static/images/HTML-logo.png" height="90px">
+            </td>
+            <td>
+                <img src="../static/images/JavaScript-logo.svg" height="90px">
+            </td>
+            <td>
+                <img src="../static/images/vue-logo.png" height="90px">
+            </td>
+            <td>
+                <img src="../static/images/bootstrap-logo.png" height="95px">
+            </td>
+
+
+            <td>
+                <img src="../static/images/mongodb-logo.jpg" height="95px">
+            </td>
+            <td>
+                <img src="../static/images/firebase-logo.png" height="95px">
+            </td>
+            <td>
+                <img src="../static/images/jsx-logo.png" height="89px">
+            </td>
+            <td>
+                <img src="../static/images/RESTful-logo.png" height="95px">
+            </td>
+
+            <td>
+                <img src="../static/images/github-logo.png" height="95px">
+            </td>
+            <td>
+                <img src="../static/images/sqlalchemy-logo.png" height="95px">
             </td>
         </tr>
     </table>
@@ -469,7 +470,7 @@ a:active {
     <!-- <div class="flex-container-1" style=" margin-bottom: -35px">
         
             
-        <div class="items-1"><img src="images/" height="200px"></div>
+        <div class="items-1"><img src="../static/images/" height="200px"></div>
         <div class="items-1"><img src="" height="75"></div>
         <div class="items-1"><img src="" height="75"></div>
         <div class="items-1"><img src="" height="75"></div>
@@ -479,11 +480,11 @@ a:active {
     <!-- <div class="flex-container-1" style="padding-top: 20px; margin-bottom: -35px">
         
             
-        <div class="items-1"><img src="images/yosemite-pano-1-best-for-emails.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/blue_2_cloud.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/yosemite-2-emails.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/blue_3_brush2.jpg" height="75" object-position="scale-down"></div>
-        <div class="items-1"><img src="images/sequoia-pano-1-email.jpg" height="75" object-position="scale-down"></div>                                            
+        <div class="items-1"><img src="../static/images/yosemite-pano-1-best-for-emails.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/blue_2_cloud.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/yosemite-2-emails.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/blue_3_brush2.jpg" height="75" object-position="scale-down"></div>
+        <div class="items-1"><img src="../static/images/sequoia-pano-1-email.jpg" height="75" object-position="scale-down"></div>                                            
     </div> -->
 
 <div>
@@ -509,7 +510,7 @@ a:active {
                     
                     <tr>
                         <p>
-                            <img src="images/profile_smile.JPG" alt="Profile Pic" width="220px" height="293px" class="center" >
+                            <img src="../static/images/profile_smile.JPG" alt="Profile Pic" width="220px" height="293px" class="center" >
                         </p>    
                     </tr>
                     <tr>
@@ -533,7 +534,7 @@ a:active {
                     <tr >
                         <p>
                             <a href="https://bird-on-the-brain-flask.herokuapp.com/">
-                            <img src="images/bird-on-brain.png" alt="Bird on the Brain Flask App" width="335px" height="214px"  class="center" >
+                            <img src="../static/images/bird-on-brain.png" alt="Bird on the Brain Flask App" width="335px" height="214px"  class="center" >
                         </a>
                         </p>
                     </tr>
@@ -552,7 +553,7 @@ a:active {
                     <tr >
                         <p>
                             <a href="https://jacedwards.github.io/Bird-Brain-Philanthropy/#/">
-                            <img src="images/bird-philanthropy.png" alt="Bird on the Brain Flask App" width="335px" height="214px"  class="center" >
+                            <img src="../static/images/bird-philanthropy.png" alt="Bird on the Brain Flask App" width="335px" height="214px"  class="center" >
                         </a>
                         </p>
                     </tr>
@@ -562,7 +563,7 @@ a:active {
 
             
             <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
-                <a href="images/Rec_Scranton.pdf">
+                <a href="../static/images/Rec_Scranton.pdf">
                 <table>
                     <tr >
                         <p style="text-align:center">GE & Delta Software Manager</p>
@@ -571,8 +572,8 @@ a:active {
                     </tr>
                     <tr >
                         <p>
-                            <a href="images/Rec_Scranton.pdf">
-                            <img src="images/Scranton-pic-cropped.jpg" alt="Dr. Bruce Scranton" width="248" height="220"  class="center">
+                            <a href="../static/images/Rec_Scranton.pdf">
+                            <img src="../static/images/Scranton-pic-cropped.jpg" alt="Dr. Bruce Scranton" width="248" height="220"  class="center">
                         </a>
                         </p>
                     </tr>
@@ -583,7 +584,7 @@ a:active {
 
 
             <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
-                <a href="images/Rec_Greeley.pdf">
+                <a href="../static/images/Rec_Greeley.pdf">
                 <table>
                     <tr >
                         <p style="text-align:center">Chair of Art & Design</p>
@@ -592,8 +593,8 @@ a:active {
                     </tr>
                     <tr >
                         <p>
-                            <a href="images/Rec_Greeley.pdf">
-                            <img src="images/Greeley-pic-cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
+                            <a href="../static/images/Rec_Greeley.pdf">
+                            <img src="../static/images/Greeley-pic-cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
                         </a>
                         </p>
                     </tr>
@@ -615,7 +616,7 @@ a:active {
                     <tr >
                         <p>
                             <a href="https://www.linkedin.com/in/craig-edwards-fs-phd/details/recommendations/?detailScreenTabIndex=0">
-                            <img src="images/linkedin_logo_cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
+                            <img src="../static/images/linkedin_logo_cropped.jpg" alt="Dr. Anne Greeley" width="250" height="220"  class="center">
                         </a>
                         </p>
                     </tr>
@@ -624,17 +625,40 @@ a:active {
                 </a>
             </div>
 
+            <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px;width:350px">
+                <a href="../static/images/Recommendations_Clients-n_Employees.pdf">
+
+                    <div>
+
+                    <table>
+                        <tr >
+                            <p style="text-align:center">Client & Employee</p>
+                            <p style="text-align:center;margin-bottom:-5px">Recommendations</p>
+                            <br>
+                        </tr>
+                        <tr >
+                            <p>
+                                <a href="../static/images/Recommendations_Clients-n_Employees.pdf">
+                                    <img src="../static/images/IWU.png" alt="Dr. Anne Greeley" width="225" height="220"  class="center">
+                                </a>
+                            </p>
+                        </tr>
+                    </table>
+                </div>
+                </a>
+            </div>
+
             
             <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:350px">
-                <a href="images/Resume.pdf">
+                <a href="../static/images/Resume.pdf">
                     <table>
                     <tr >
                         <p style="text-align:center">Resum&eacute;</p>
                     </tr>
                     <tr >
                         <p>
-                            <a href="images/Resume.pdf">
-                            <img src="images/Resume.png" alt="Resume" width="250" height="321"  class="center"></a>
+                            <a href="../static/images/Resume.pdf">
+                            <img src="../static/images/Resume.png" alt="Resume" width="250" height="321"  class="center"></a>
 
                         </p>
                     </tr>
@@ -647,7 +671,7 @@ a:active {
 
             
             <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:350px">
-                <a href="images/Cover_letter.pdf">
+                <a href="../static/images/Cover_letter.pdf">
                 <div>
                 <table>
                     <tr >
@@ -656,8 +680,8 @@ a:active {
 
                     <tr >
                         <p>
-                            <a href="images/Cover_letter.pdf">
-                            <img src="images/Cover_Letter.png" alt="Resume" width="250" height="321"  class="center"></a>
+                            <a href="../static/images/Cover_letter.pdf">
+                            <img src="../static/images/Cover_Letter.png" alt="Resume" width="250" height="321"  class="center"></a>
                         </p>
                     </tr>
 
@@ -678,7 +702,7 @@ a:active {
                     <tr >
                         <p>
                             <a href="https://github.com/JACedwards">
-                            <img src="images/github-logo.png" alt="Resume" width="250" height="250"  class="center"></a>
+                            <img src="../static/images/github-logo.png" alt="Resume" width="250" height="250"  class="center"></a>
                         </p>
                     </tr>
 
@@ -700,63 +724,63 @@ a:active {
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/html-certified-large.png" height="200px">
+                <img src="../static/images/html-certified-large.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/css-certified(204px).png" height="200px">
+                <img src="../static/images/css-certified(204px).png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/javascript-certified.png" height="200px">
+                <img src="../static/images/javascript-certified.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/nodejs-certified.png" height="200px">
+                <img src="../static/images/nodejs-certified.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/python-certified.png" height="200px">
+                <img src="../static/images/python-certified.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/react-certified.png" height="200px">
+                <img src="../static/images/react-certified.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/sql-certified.png" height="200px">
+                <img src="../static/images/sql-certified.png" height="200px">
             </div>
 
         </div>
         <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/flask-certified.png" height="200px">
+                <img src="../static/images/flask-certified.png" height="200px">
             </div>
 
         </div>
               <div class="main-articles" class="employ-size" style="margin-right:30px; margin-bottom:30px; width:225">
             
             <div>
-                <img src="images/graphql-certified.png" height="200px">
+                <img src="../static/images/graphql-certified.png" height="200px">
             </div>
 
         </div>
